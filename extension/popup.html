@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="tailwind.css">
+</head>
+<body class="w-72 p-4 bg-black text-gray-100 font-sans">
+    <h1 class="text-xl font-bold mb-2 text-yellow-600">Focusly</h1>
+
+    
+    <!--focus mode status text-->
+    <p id="status" class="text-sm text-gray-400 mb-4">Focus Mode: OFF</p>
+    
+    <!--focus mode toggle button-->
+    <button id="toggleBtn"
+        class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded-lg mb-4 transition">
+        Start Focus Session
+    </button>
+
+
+    <!--blocked sites list section-->
+    <div id="blocklist-section" class="mb-4">
+        <h3 class="text-sm font-semibold mb-1 text-yellow-600">Blocked Sites</h3>
+        <ul id="blockedList" class="text-sm text-gray-300 list-disc list-inside space-y-1"></ul>
+    </div>
+
+    <!--clear blocklist-->
+    <button id="clearBtn"
+        class="w-full bg-yellow-600 hover:bg-yellow-700 text-gray-700 font-medium py-2 rounded-lg transition">
+        Clear Blocklist
+    </button>
+
+    <script src="popup.js"> </script>
+</body>
+</html>
