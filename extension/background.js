@@ -1,5 +1,7 @@
 //Checks every time the user goes to a new page
 chrome.webNavigation.onCompleted.addListener(async(details)=>{
+        console.log('Navigation detected:', details.url); // ADD THIS
+
 
     if (details.frameId !=0)return; //no ads includeded in the scan
 
