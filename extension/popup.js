@@ -1,6 +1,6 @@
 //Add references to our html by id
 const toggleBtn = document.getElementById("toggleBtn");
-const statusText = document.getElementById("statusText");
+const statusText = document.getElementById("status");
 const blockedList = document.getElementById("blockedList");
 const clearBtn = document.getElementById("clearBtn");
 
