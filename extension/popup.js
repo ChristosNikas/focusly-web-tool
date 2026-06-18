@@ -14,16 +14,16 @@ async function updateUI(){
         statusText.textContent = "Focus Mode: ON";
 
         //change the color when on go green
-        toggleBtn.classList.remove("bg-red-600", "hover:bg-red-700");
-        toggleBtn.classList.add("bg-green-600", "hover:bg-green-700");
+        toggleBtn.classList.remove("bg-green-600", "hover:bg-green-700");
+        toggleBtn.classList.add("bg-red-600", "hover:bg-red-700");
     }
     else{
         toggleBtn.textContent = "Start Focus Mode";
         statusText.textContent = "Focus Mode: OFF";
         
         //change the color when off go red
-        toggleBtn.classList.remove("bg-green-600", "hover:bg-green-700");
-        toggleBtn.classList.add("bg-red-600", "hover:bg-red-700");
+        toggleBtn.classList.remove("bg-red-600", "hover:bg-red-700");
+        toggleBtn.classList.add("bg-green-600", "hover:bg-green-700");
     }
     //update the blocklist
     renderBlockedList();

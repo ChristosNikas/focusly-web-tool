@@ -16,10 +16,10 @@ if(reason){
 
 //display the blocked sites
 if (originalUrl){
-    urlEL.textContent = `Blocked URL: ${originalUrl}`;
+    urlEl.textContent = `Blocked URL: ${originalUrl}`;
 }
 
 //User clicks GO BACK btn
 goBackBtn.addEventListener("click",()=>{
-    window.history.back();
+    window.location.href = 'https://www.google.com';
 });

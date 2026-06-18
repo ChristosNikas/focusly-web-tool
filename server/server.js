@@ -59,7 +59,8 @@ app.post("/classify", async (req, res) => {
         res.json(result);
     }catch (error){
         console.error("Error calling OpenRouter API:", error.message);
-        console.error("Full error:", error.response?.data);  // Add this line
+        console.error("Full error:", error.response?.data); 
+        
         res.status(500).json({error:"AI classification failed"}); 
     }
 });
